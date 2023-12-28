@@ -8,8 +8,8 @@
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [About](#about)
+- [Usage](#usage)
 - [Features](#features)
 - [Todo](#todo)
 - [Changelog](#changelog)
@@ -20,6 +20,11 @@
 ## About
 
 This is my custom template for [typst](www.github.com/typst/typst). It is designed to be used for my personal notes and class notes.
+
+## Usage
+
+1. Import `Base.typ` into your project
+2. Add `show: conf` to your project for the basic configuration
 
 ## Features
 
