@@ -37,7 +37,7 @@ This is my custom template for [typst](www.github.com/typst/typst). It is design
 - [x] Headings
 - [x] Lists
 - [x] Colors
-- [ ] Links
+- [x] Links
 
 ## Todo
 
