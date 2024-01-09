@@ -2,7 +2,7 @@
 
 ![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge)
 
-> Version: **1.0.0**
+> Version: **1.1.0**
 
 ---
 
@@ -37,12 +37,12 @@ This is my custom template for [typst](www.github.com/typst/typst). It is design
 - [x] Headings
 - [x] Lists
 - [x] Colors
+- [ ] Links
 
 ## Todo
 
 - [ ] Images
 - [ ] Tables
-- [ ] Links
 
 ## Changelog
 

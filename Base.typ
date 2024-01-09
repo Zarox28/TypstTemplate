@@ -46,11 +46,25 @@
 
   // List
   set list(marker: ([•], [◦], [•]))
-  show list: it => move(dx: 5%, it)
-  show enum: it => move(dx: 5%, it)
+  show list: it => move(dx: 3%, it)
+  show enum: it => move(dx: 3%, it)
 
   // Table
   set table(align: center)
+
+  // Link
+  show link: it => {
+    if (it.dest != it.body.text) {
+      stack(
+        dir: ltr,
+        underline(stroke: 0.5pt + black, offset: 2.2pt, it.body),
+        move(dx: 0.6%, scale(x: 90%, y: 90%)[#emoji.chain])
+      )
+      
+    } else {
+      underline(stroke: 0.5pt + black, offset: 2.2pt, it.dest)
+    }
+  }
 
   // Page Content
   body
