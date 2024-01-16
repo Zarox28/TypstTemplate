@@ -50,7 +50,7 @@
   show enum: it => move(dx: 3%, it)
 
   // Table
-  set table(align: center)
+  set table(align: center + horizon)
 
   // Link
   show link: it => {
