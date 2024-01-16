@@ -48,7 +48,7 @@
   )
 }
 
-#let main(ps1: [], input: [], output: []) = {
+#let main(ps1: "", input: "", output: "") = {
   return block(
     width: 100%,
     inset: inset_size,
@@ -63,7 +63,7 @@
   )
 }
 
-#let term(ps1: "", input: "", title: "", output: []) = {
+#let term(ps1: "", input: "", title: "", output: "") = {
   return align(left, 
     box(
       width: auto,
@@ -73,7 +73,7 @@
         main(
           ps1: ps1,
           input: input,
-          output: output.text
+          output: output
         )
       )
     )

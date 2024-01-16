@@ -2,13 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2024-01-16
+
+### Fixed
+
+- Fixed terminal output
+
 ## [1.1.1] - 2024-01-16
 
-### Changed
+### Fixed
 
-- Changed table align
+- Fixed table align
 
-- Changed list indent
+- Fixed list indent
 
 ## [1.1.0] - 2024-01-12
 
