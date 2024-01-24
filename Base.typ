@@ -11,7 +11,7 @@
   set page(numbering: "1", number-align: center)
 
   // Font
-  set text(font: "Linux Libertine", lang: "fr")
+  set text(font: "Liberation Sans", lang: "fr")
 
   // Table Of Contents
   set outline(title: none, depth: 3, indent: 0.6em)

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3] - 2024-01-24
+
+### Fixed
+
+- Fixed font
+
 ## [1.1.2] - 2024-01-16
 
 ### Fixed
