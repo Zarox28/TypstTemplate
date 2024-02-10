@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2024-02-10
+
+### Added
+
+- Table support
+
+### Fixed
+
+- Fixed table inset
+
+### Removed
+
+- Removed LICENSE & CONTRIBUTING
+
 ## [1.1.3] - 2024-01-24
 
 ### Fixed

@@ -1,6 +1,7 @@
 // ----- PACKAGES IMPORT -----
 #import "@preview/gentle-clues:0.4.0": *
 #import "@preview/outrageous:0.1.0"
+#import "@preview/tablex:0.0.8": *
 #import "@preview/sourcerer:0.2.1": code
 #import "@preview/splash:0.3.0": xcolor
 #import "Term.typ": term
@@ -50,7 +51,7 @@
   show enum: it => move(dx: 3%, it)
 
   // Table
-  set table(align: center + horizon)
+  set table(align: center + horizon, inset: 1em)
 
   // Link
   show link: it => {
@@ -73,12 +74,12 @@
 // ----- CLASS CONFIGURATION -----
 #let class(theme: "", theme_num: 1, chapter: "", chapter_num: 1, body) = {
   // Heading
-  set heading(numbering: "I/A.1 - ")
+  set heading(numbering: "I / A.1 - ")
   show heading: it => {
     if (it.level < 4) {
       if (it.level == 1) {
         if (it.outlined) {
-          counter(heading).display("I/ ")
+          counter(heading).display("I / ")
         }
         
       } else {

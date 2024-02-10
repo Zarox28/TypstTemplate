@@ -2,7 +2,7 @@
 
 ![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge)
 
-> Version: **1.1.3**
+> Version: **1.2.0**
 
 ---
 
@@ -13,8 +13,6 @@
 - [Features](#features)
 - [Todo](#todo)
 - [Changelog](#changelog)
-- [License](#license)
-- [Contributing](#contributing)
 - [Authors](#authors)
 
 ## About
@@ -38,23 +36,15 @@ This is my custom template for [typst](www.github.com/typst/typst). It is design
 - [x] Lists
 - [x] Colors
 - [x] Links
+- [x] Tables
 
 ## Todo
 
 - [ ] Images
-- [ ] Tables
 
 ## Changelog
 
 see [CHANGELOG.md](CHANGELOG.md) for more info
-
-## License
-
-This project is licensed under the AGPL v3 License - see the [LICENSE](LICENSE) file for details
-
-## Contributing
-
-Contributing is disabled for this project
 
 ## Authors
 
