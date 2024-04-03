@@ -2,17 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.1] - 2024-04-03
+
+### Fixed
+
+- Fixed heading vertical spacing
+
 ## [1.3.0] - 2024-04-03
 
 ### Added
 
-- Pseudo Code support
+- Added pseudo-code support
 
 ## [1.2.0] - 2024-02-10
 
 ### Added
 
-- Table support
+- Added table support
 
 ### Fixed
 

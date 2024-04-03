@@ -59,7 +59,7 @@
         underline(stroke: 0.5pt + black, offset: 2.2pt, it.body),
         move(dx: 0.6%, scale(x: 90%, y: 90%)[#emoji.chain])
       )
-      
+
     } else {
       underline(stroke: 0.5pt + black, offset: 2.2pt, it.dest)
     }
@@ -77,21 +77,23 @@
   // Heading
   set heading(numbering: "I / A.1 - ")
   show heading: it => {
-    if (it.level < 4) {
-      if (it.level == 1) {
-        if (it.outlined) {
-          counter(heading).display("I / ")
+    block(below: 1.2em,
+      if (it.level < 4) {
+        if (it.level == 1) {
+          if (it.outlined) {
+            counter(heading).display("I / ")
+          }
+
+        } else {
+          counter(heading).display()
         }
-        
+
+        underline(stroke: 1.2pt + red, offset: 4pt, it.body)
+
       } else {
-        counter(heading).display()
+        underline(stroke: 1.2pt + blue, offset: 4pt, it.body)
       }
-      
-      underline(stroke: 1.2pt + red, offset: 4pt, it.body)
-      
-    } else {
-      underline(stroke: 1.2pt + blue, offset: 4pt, it.body)
-    }
+    )
   }
 
   // Theme Displaying
@@ -123,12 +125,14 @@
 #let note(title: "", name: "", date: false, body) = {
   // Heading
   show heading: it => {
-    if (it.level < 4) {
-      underline(stroke: 1.2pt + red, offset: 4pt, it.body)
-    
-    } else {
-      underline(stroke: 1.2pt + blue, offset: 4pt, it.body)
-    }
+    block(below: 1.2em,
+      if (it.level < 4) {
+        underline(stroke: 1.2pt + red, offset: 4pt, it.body)
+
+      } else {
+        underline(stroke: 1.2pt + blue, offset: 4pt, it.body)
+      }
+    )
   }
 
   // Name Displaying
