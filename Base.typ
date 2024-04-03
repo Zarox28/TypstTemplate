@@ -4,7 +4,8 @@
 #import "@preview/tablex:0.0.8": *
 #import "@preview/sourcerer:0.2.1": code
 #import "@preview/splash:0.3.0": xcolor
-#import "Term.typ": term
+#import "@preview/lovelace:0.2.0": *
+#import "term.typ": term
 
 // ----- MAIN CONFIGURATION -----
 #let conf(body) = {
@@ -31,10 +32,7 @@
   // Code
   set raw(tab-size: 2)
   show raw.where(block: true): it => (
-    code(
-      lang: upper(it.lang.first()) + it.lang.slice(1),
-      it
-    )
+    code(lang: upper(it.lang.first()) + it.lang.slice(1), it)
   )
   show raw.where(block: false): (
     box.with(
@@ -67,6 +65,9 @@
     }
   }
 
+  // Pseudo-Code
+  show: setup-lovelace
+
   // Page Content
   body
 }
@@ -91,8 +92,6 @@
     } else {
       underline(stroke: 1.2pt + blue, offset: 4pt, it.body)
     }
-    
-    linebreak()
   }
 
   // Theme Displaying
