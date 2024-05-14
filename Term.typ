@@ -64,7 +64,7 @@
 }
 
 #let term(ps1: "", input: "", title: "", output: "") = {
-  return align(left, 
+  return align(left,
     box(
       width: auto,
       stack(

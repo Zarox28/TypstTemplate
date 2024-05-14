@@ -1,6 +1,9 @@
-# typst-template
+<div align="center">
+  <h1>typst-template</h1>
+  <img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge"/>
+</div>
 
-![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge)
+<br />
 
 > Version: **1.3.1**
 
@@ -44,7 +47,7 @@ This is my custom template for [typst](www.github.com/typst/typst). It is design
 
 ## Changelog
 
-see [CHANGELOG.md](CHANGELOG.md) for more info
+See [CHANGELOG.md](CHANGELOG.md) for more info
 
 ## Authors
 

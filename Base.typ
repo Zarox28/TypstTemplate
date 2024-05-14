@@ -34,14 +34,6 @@
   show raw.where(block: true): it => (
     code(lang: upper(it.lang.first()) + it.lang.slice(1), it)
   )
-  show raw.where(block: false): (
-    box.with(
-      fill: luma(240),
-      inset: (x: 3pt, y: 0pt),
-      outset: (y: 3pt),
-      radius: 2pt
-    )
-  )
 
   // List
   set list(marker: ([•], [◦], [•]))
@@ -173,7 +165,7 @@
 #let call(size: 1, body) = {
   tab(size: size)[
     #box(
-      width: 85%,
+      width: 90%,
       stack(
         dir: ltr,
         move(dy: -0.24%, emoji.arrow.filled),
