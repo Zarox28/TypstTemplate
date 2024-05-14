@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>typst-template</h1>
-  <img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge"/>
+  <h1>Typst Template</h1>
 </div>
 
 <br />
@@ -51,4 +50,4 @@ See [CHANGELOG.md](CHANGELOG.md) for more info
 
 ## Authors
 
-- [**@Zarox28**](https://github.com/Zarox28)
+- **[**@Zarox28**](https://github.com/Zarox28)**
