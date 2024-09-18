@@ -1,10 +1,8 @@
 // ----- PACKAGES IMPORT -----
-#import "@preview/gentle-clues:0.4.0": *
+#import "@preview/gentle-clues:0.9.0": *
 #import "@preview/outrageous:0.1.0"
-#import "@preview/tablex:0.0.8": *
 #import "@preview/sourcerer:0.2.1": code
-#import "@preview/splash:0.3.0": xcolor
-#import "@preview/lovelace:0.2.0": *
+#import "@preview/splash:0.4.0": xcolor
 #import "term.typ": term
 
 // ----- MAIN CONFIGURATION -----
@@ -51,14 +49,11 @@
         underline(stroke: 0.5pt + black, offset: 2.2pt, it.body),
         move(dx: 0.6%, scale(x: 90%, y: 90%)[#emoji.chain])
       )
-
+      
     } else {
       underline(stroke: 0.5pt + black, offset: 2.2pt, it.dest)
     }
   }
-
-  // Pseudo-Code
-  show: setup-lovelace
 
   // Page Content
   body
@@ -75,13 +70,13 @@
           if (it.outlined) {
             counter(heading).display("I / ")
           }
-
+        
         } else {
           counter(heading).display()
         }
-
+      
         underline(stroke: 1.2pt + red, offset: 4pt, it.body)
-
+      
       } else {
         underline(stroke: 1.2pt + blue, offset: 4pt, it.body)
       }
@@ -120,7 +115,7 @@
     block(below: 1.2em,
       if (it.level < 4) {
         underline(stroke: 1.2pt + red, offset: 4pt, it.body)
-
+      
       } else {
         underline(stroke: 1.2pt + blue, offset: 4pt, it.body)
       }
@@ -156,13 +151,18 @@
   move(dx: 5% * size, body)
 }
 
+// ----- SIZE FUNCTION -----
+#let size(size, body) = {
+  scale(x: 100% * size, y: 100% * size)[#body]
+}
+
 // ----- UNDERLINE FUNCTION -----
 #let under(color: red, body) = {
   underline(stroke: 1.2pt + color, offset: 4pt)[#body]
 }
 
 // ----- CALLOUT FUNCTION -----
-#let call(size: 1, body) = {
+#let call(size: 0, body) = {
   tab(size: size)[
     #box(
       width: 90%,
@@ -178,7 +178,7 @@
 // ----- WORD DEFINITION FUNCTION -----
 #let def(word: "", ..args) = clue(
   title: "Définition : " + word,
-  _color: yellow,
+  accent-color: yellow,
   icon: emoji.book,
   ..args
 )
