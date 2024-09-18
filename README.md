@@ -4,8 +4,6 @@
 
 <br />
 
-> Version: **1.3.1**
-
 ---
 
 ## Table of Contents
@@ -34,6 +32,7 @@ This is my custom template for [typst](www.github.com/typst/typst). It is design
 - [x] Underline
 - [x] Indentation
 - [x] Table of contents
+- [x] Scale
 - [x] Headings
 - [x] Lists
 - [x] Colors
